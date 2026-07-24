@@ -1,0 +1,214 @@
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Preloader */
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+#preloader::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  border: 6px solid #007bff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+
+
+header.navbar {
+  background-color: hsl(341, 98%, 22%) !important; /* Replace with your color */
+}
+
+
+.carousel-item img {
+  height: 100vh;          /* Full screen height */
+  object-fit: cover;      /* Crop nicely */
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20%;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.carousel-caption h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.carousel-caption p {
+  font-size: 1.5rem;
+}
+
+
+
+/* Sections */
+section { padding: 80px 0; }
+h2 { font-weight: 700; margin-bottom: 40px; color: #007bff; text-transform: uppercase; }
+p { color: #333; line-height: 1.7; font-size: 1rem; }
+
+/* Services */
+#services .col-md-4 {
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+  border-radius: 8px;
+}
+#services .col-md-4:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+footer.footer {
+   background-color: hsl(240, 36%, 39%) !important; /* Navy blue */
+}
+
+
+
+.contact-buttons {
+  position: fixed;
+  right: 20px;   /* Stick to right side */
+  bottom: 20px;  /* Distance from bottom */
+  display: flex;
+  flex-direction: column; /* Stack vertically */
+  gap: 12px;     /* Space between buttons */
+  z-index: 999;  /* Keep above everything */
+}
+
+.contact-buttons {
+  position: fixed;
+  right: 20px;   /* Stick to right side */
+  bottom: 20px;  /* Distance from bottom */
+  display: flex;
+  flex-direction: column; /* Stack vertically */
+  gap: 12px;     /* Space between buttons */
+  z-index: 999;  /* Keep above everything */
+}
+
+
+
+
+/* Map Styling */
+.map-container {
+  max-width: 100%;
+  border-radius: 12px;       /* Rounded corners */
+  overflow: hidden;          /* Ensures iframe corners are rounded */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2); /* Soft shadow */
+}
+.map-container iframe {
+  display: block;
+  width: 100%;
+  height: 400px;
+}
+
+/* Quote Section */
+#quote h2 {
+  font-weight: bold;
+  color: #007bff;
+}
+.contact-box {
+  background-color: hsl(341, 75%, 61%) !important;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+.quote-form {
+  background-color: hsl(341, 75%, 61%) !important;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+.quote-form .btn-warning {
+  font-weight: bold;
+  width: 100%;
+}
+
+
+/* Why Choose Us Section */
+#whyus h2 {
+  font-weight: bold;
+  color: #007bff;
+}
+.feature-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.feature-box i {
+  font-size: 40px;
+  color: #ffc107;
+  margin-bottom: 15px;
+}
+.feature-box:hover {
+  transform: translateY(-10px);
+}
+
+
+#clients h2 {
+  font-weight: bold;
+  color: #007bff;
+  text-transform: uppercase;
+}
+
+.client-logo {
+  max-height: 80px;
+  transition: transform 0.3s ease;
+}
+.client-logo:hover {
+  transform: scale(1.1);
+}
+
+
+.contact-buttons-left {
+  position: fixed;
+  right: 20px;     /* Stick to right side */
+  bottom: 20px;    /* Distance from bottom */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 999;
+}
+
+
+.contact-buttons-left a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.contact-buttons-left a:hover {
+  transform: scale(1.1);
+}
+
+
+.nav-link.active {
+  color: #ffc107 !important; /* Highlight color */
+  font-weight: bold;
+}
